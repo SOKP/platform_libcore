@@ -19,12 +19,13 @@ package libcore.java.net;
 import junit.framework.TestCase;
 
 import java.lang.reflect.Field;
-import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.DatagramSocketImpl;
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.net.SocketException;
+import java.net.DatagramSocketImpl;
+import java.net.InetAddress;
 
 public class DatagramSocketTest extends TestCase {
 
@@ -60,6 +61,7 @@ public class DatagramSocketTest extends TestCase {
     assertEquals(-1, ds.getLocalPort());
     assertNull(ds.getLocalSocketAddress());
   }
+<<<<<<< HEAD
 
   public void testPendingException() throws Exception {
     final int port = 9999;
@@ -90,6 +92,8 @@ public class DatagramSocketTest extends TestCase {
     }
   }
 
+=======
+>>>>>>> 7d9ed95eba20267eb4cc37be93cba8af95d2857e
   // Socket should become connected even if impl.connect() failed and threw exception.
   public void test_b31218085() throws Exception {
     final int port = 9999;
